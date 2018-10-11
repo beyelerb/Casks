@@ -5,7 +5,7 @@ cask 'securid' do
     url "https://community.rsa.com/servlet/JiveServlet/download/62004-6-57897/RSASecurIDMac#{version.no_dots}.dmg.zip"
     name 'RSA SecurID'
     homepage 'https://www.rsa.com/en-us/products/rsa-securid-suite/rsa-securid-access/securid-software-tokens.html'
-    container :nested => 'RSASecurIDMac#{version}.dmg"
+    container :nested => "RSASecurIDMac#{version}.dmg"
 
     pkg "RSASecurIDTokenAutoMac#{version.no_dots}x64.pkg"
     
